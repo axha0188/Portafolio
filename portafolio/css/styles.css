@@ -1,0 +1,460 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*scrollbar*/
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: yellow;
+    border-radius: 10px;
+}
+:root{
+    scroll-behavior: smooth;
+}
+/*body*/
+body{
+    background: rgb(20, 20, 20);
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*navegacion*/
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav{
+    width: 100%;
+    position: fixed ;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.opnav{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-right: 100px;
+}
+header .nav .opnav a{
+    padding: 20px;
+}
+header .nav .opnav a:hover{
+    box-shadow: 0 2px yellow ;
+    transition: all .8s ease;
+}
+
+.logo{
+    margin-left: 100px;
+    font-size: 60px;
+}
+.menu{
+    display: none;
+    font-size: 50px;
+    margin-right: 100px;
+}
+.hdconten{
+    /*
+    margin-top: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    */
+    margin: 300px 200px 0px 200px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header .hdconten .text p{
+    color: yellow;
+}
+header .hdconten .text h1{
+    font-size: 50px;
+}
+.contact{
+    padding: 30px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.contact a{
+    background: yellow;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    box-shadow: 5px 5px 5px 5px rgb(10, 10, 10) ;
+}
+.contact a:hover{
+    transform: translateY(-10px);
+    transition: all .5s ease;
+}
+/*secciones*/
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+section{
+    margin: 200px 200px 0px 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.nosotros{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.cart{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+img{
+    object-fit: cover;
+}
+section .nosotros .cart img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 20px 0px 20px 0px;
+    box-shadow: 1px 1px 1px 1px yellow;
+}
+section .nosotros .cart img:hover{
+    box-shadow: 5px 5px 5px 5px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
+/*estudios*/
+.estudio{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.carrera{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    flex-wrap: wrap;
+}
+.carrera:hover{
+    background: yellow;
+    box-shadow: 5px 5px 5px 5px rgb(10, 10, 10);
+    transition: all .5s ease;
+    border-radius: 20px;
+    color: black;
+}
+section .estudio .carrera img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 1px 1px yellow;
+}
+section .estudio .carrera img:hover{
+    box-shadow: 5px 5px 5px 5px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
+.descripcion{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cr2{
+    flex-direction: row-reverse;
+}
+/*trabajos*/
+.skill{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*margin-bottom: 20px;*/
+    text-align: center;
+}
+.sk{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 1px yellow;
+    border-radius: 15px;
+}
+.sk:hover{
+    box-shadow: 10px 10px 10px 10px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .8s ease;
+}
+section .skill .sk i{
+    font-size: 100px;
+}
+section .skill .sk p{
+    font-size: 20px;
+}
+/*habilidades*/
+.contenedor-imagenes{
+    margin-top: 30px;
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius:20px;
+}
+.contenedor-imagenes .imagen{
+    width: 350px;
+    height:350px;
+    position: relative;
+    margin-bottom:20px;
+    /*margin: 20px 0px 0px 20px;*/
+    box-shadow: 1px 1px 1px 1px yellow;
+    border-radius: 15px;
+}
+.contenedor-imagenes .imagen:hover{
+    box-shadow: 10px 10px 10px 10px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .8s ease;
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(15, 15, 15, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+/*curso*/
+.cour{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*margin-bottom: 20px;*/
+    text-align: center;
+}
+.cr{
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 1px yellow;
+    border-radius: 15px;
+}
+.cr:hover{
+    box-shadow: 10px 10px 10px 10px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .8s ease;
+}
+section .cour .cr i{
+    font-size: 60px;
+}
+section .cour .cr strong{
+    font-size: 20px;
+}
+/*opinion*/
+.opinion{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*margin-bottom: 20px;*/
+    text-align: center;
+}
+.op{
+    padding: 15px;
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 1px yellow;
+    border-radius: 15px;
+}
+.op:hover{
+    box-shadow: 10px 10px 10px 10px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .8s ease;
+}
+.s1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+}
+.s2{
+    text-align:center ;
+    overflow: hidden;
+}
+section .opinion .op .s1 i{
+    font-size: 60px;
+}
+/*contacto*/
+footer{
+    margin-top: 200px;
+    text-align: center;
+    background: yellow;
+    
+}
+footer h3{
+    color: black;
+}
+input{
+    padding: 10px;
+    background: black;
+    color: yellow;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(10, 10, 10);
+}
+input:hover{
+    box-shadow: 10px 10px 10px 10px rgb(10, 10, 10);
+    transform: translateY(-5px);
+    transition: all .8s ease;
+}
+.form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#msj{
+    height: 200px;
+    text-align: center;
+}
+#enviar:hover{
+    background: rgb(240, 74, 74);
+}
+/**/
+@media screen and (max-width:800px)
+{
+    
+    .hdconten{
+        margin-top: 150px;
+    }
+    h1{
+        font-size: 25px;   
+    }
+    h2{
+        font-size: 20px;
+    }
+    .cart{
+        width: 100%;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .carrera{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .logo{
+        display: none;
+    }
+    .opnav{
+        margin: auto;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .logo{
+        display: none;
+    }
+}
+/*
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .opnav{
+        display: none;
+    }
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 32%;
+    }
+}
+*/
